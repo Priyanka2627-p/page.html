@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 2px solid;
+            animation-name: owt;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            background-color: hotpink;
+            position: relative;
+            animation-direction: alternate-reverse;
+            animation-timing-function: linear;
+        }
+        
+        @keyframes owt {
+            0% {
+                left: 0;
+                top: 10%;
+                background-color: lightpink;
+            }
+            25% {
+                left: 80%;
+                top: 10%;
+                background-color: palevioletred;
+            }
+            50% {
+                left: 80%;
+                top: 70%;
+                background-color: plum;
+            }
+            75% {
+                left: 0%;
+                top: 70%;
+                background-color: magenta;
+            }
+            100% {
+                left: 0%;
+                top: 10%;
+                background-color: mediumvioletred;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">CSS ANIMATION</h1>
+    <div class="box" style="animation-timing-function: linear;"></div>
+    <div class="box" style="animation-timing-function: ease;"></div>
+    <div class="box" style="animation-timing-function: ease-in;"></div>
+    <div class="box" style="animation-timing-function: ease-in-out;"></div>
+    <div class="box" style="animation-timing-function: ease-out;"></div>
+
+
+</body>
+
+</html>
